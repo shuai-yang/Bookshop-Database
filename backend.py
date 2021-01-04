@@ -46,10 +46,8 @@ def update(id, title, author, year, isbn):
 connect()
 insert("Harry Potter","Washington",1997,9780439203524)
 insert("The sea", 'John Tablet', 1918, 913123132)
-#connect() WRONG!
 insert("The Earth", 'John Smith', 1918, 913123132)
-#print(view())
-#print(search(author="John Smith"))
-#delete(2)
-#update(4, "The moon", "John Smooth", 1917, 35964545)
+print(search(author="John Smith"))
+update(1, "The moon", "John Smooth", 1917, 35964545)
+delete(2)
 print(view())
